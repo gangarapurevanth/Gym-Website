@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vikky Fitness Centre</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url("gym.jpg");
+            font-family: 'Dongle', sans-serif;
+        }
+        .left{
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            display: inline-block;
+            padding: 2px 2px;
+            margin: 2px 2px;
+        }
+        .mid{
+            display: block;
+            margin: 48px auto;
+            width: 36%;
+        }
+        .right{
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            display: inline-block;
+        }
+        .left img{
+            width: 142px;
+            filter: invert();
+        }
+        .left div{
+            line-height: 0px;
+            font-size: 30px;
+            text-align: center;
+        }
+        .navbar{
+            display: inline-block;
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 41px;
+            
+        }
+        .navbar li a{
+            text-decoration: none;
+            color: white;
+            padding: 2px 16px;
+            font-weight: bolder;
+        }
+        .navbar li a:hover{
+            color: rgb(134, 128, 128);
+            text-decoration: underline;
+        }
+        .navbar li a:active{
+            color: rgb(158, 157, 163);
+            text-decoration: underline;
+        }
+        .btn{
+            cursor: pointer;
+            margin: 17px 8px;
+        }
+        .btn:hover{
+            color: rgb(134, 128, 128);
+        }
+        .container{
+            display: block;
+            margin: 129px auto;
+            width: 13%;
+        }
+        .formgrp input{
+            margin: 6px auto;
+            border-radius: 30px;
+            font-size: 23px;
+            text-align: center;
+        }
+        .container button{
+            width: 115%;
+            margin: 29px;
+            display: block;
+            cursor: pointer;
+        }
+        h4{
+            font-size: 58px;
+            margin: 0px 50px;        
+            width: 132%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left">
+            <img src="logo.png" alt="">
+            <div class="gymname">Vikky Fitness Centre</div>
+        </div>
+        <div class="mid">
+            <nav class="navbar">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="right">
+            <button class="btn">Call</button>        
+            <button class="btn">Email</button>        
+        </div>
+    </header>
+    <div class="container">
+        <form action="backend.py">
+            <h4>Apply Here</h4>
+            <div class="formgrp">
+                <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            </div>
+            <div class="formgrp">
+                <input type="email" name="email" id="email" placeholder="Enter your Email id">
+            </div>
+            <div class="formgrp">
+                <input type="text" name="gender" id="gender" placeholder="Enter your Gender">
+            </div>
+            <div class="formgrp">
+                <input type="password" name="password" id="password" placeholder="Set your Password">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
