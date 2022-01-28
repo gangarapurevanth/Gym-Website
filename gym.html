@@ -74,9 +74,15 @@
             color: rgb(134, 128, 128);
         }
         .container{
+            background-color: rgba(255, 172, 172, 0.493);
+            height: 240px;
+            border: 2px solid rgb(255, 172, 172);
             display: block;
             margin: 129px auto;
-            width: 13%;
+            padding: 39px 56px;
+            width: 292px;
+            border-bottom-left-radius: 42px;
+            border-bottom-right-radius: 42px;
         }
         .formgrp input{
             margin: 6px auto;
@@ -85,15 +91,30 @@
             text-align: center;
         }
         .container button{
-            width: 115%;
+            width: 80%;
             margin: 29px;
             display: block;
             cursor: pointer;
         }
         h4{
+            color: black;
+            background-color: rgb(253, 255, 159);
+            width: 400px;
+            height: 70px;
+            border: 2px solid black;
             font-size: 58px;
-            margin: 0px 50px;        
-            width: 132%;
+            margin: 2px auto;
+            padding: 2px 2px;
+            text-align: center;       
+        }
+        .heading{
+            position: relative;
+            top: 131px;
+        }
+        .total{
+            position: relative;
+            top: -112px;
+
         }
     </style>
 </head>
@@ -118,23 +139,27 @@
             <button class="btn">Email</button>        
         </div>
     </header>
-    <div class="container">
-        <form action="backend.py">
+    <div class="total">
+        <div class="heading">
             <h4>Apply Here</h4>
-            <div class="formgrp">
-                <input type="text" name="name" id="name" placeholder="Enter Your Name">
-            </div>
-            <div class="formgrp">
-                <input type="email" name="email" id="email" placeholder="Enter your Email id">
-            </div>
-            <div class="formgrp">
-                <input type="text" name="gender" id="gender" placeholder="Enter your Gender">
-            </div>
-            <div class="formgrp">
-                <input type="password" name="password" id="password" placeholder="Set your Password">
-            </div>
-            <button type="submit">Submit</button>
-        </form>
+        </div>
+        <div class="container">
+            <form action="backend.py">
+                <div class="formgrp">
+                    <input type="text" name="name" id="name" placeholder="Enter Your Name">
+                </div>
+                <div class="formgrp">
+                    <input type="email" name="email" id="email" placeholder="Enter your Email id">
+                </div>
+                <div class="formgrp">
+                    <input type="text" name="gender" id="gender" placeholder="Enter your Gender">
+                </div>
+                <div class="formgrp">
+                    <input type="password" name="password" id="password" placeholder="Set your Password">
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
